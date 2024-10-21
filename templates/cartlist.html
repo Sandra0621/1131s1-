@@ -1,0 +1,22 @@
+<html><head>
+<meta charset="utf-8">
+<title>cartlist</title></head>
+<body>
+<p>購物車清單</p>
+<hr />
+<table width="200" border="1">
+  <tr>
+    <td>cID</td>
+    <td>name</td>
+    <td>price</td>
+  </tr>
+    {% for rec in data %}
+    <tr>
+        <td>{{rec.cID}}</td>
+        <td>{{rec.name}}</td>
+        <td>{{rec.price}}</td>
+    </tr>
+    {% endfor %}
+</table>
+<a href="OnlineShopping.html">回首頁</a>
+</body></html>
